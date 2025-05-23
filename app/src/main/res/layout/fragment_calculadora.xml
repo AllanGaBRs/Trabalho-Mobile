@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.calculadora.CalculadoraFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_text_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="Digite suas Notas:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_subtext_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text_calc"
+            android:text="0.0 a 10.0"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_note1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@id/tv_subtext_calc"
+            android:hint="Nota 1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.," />
+
+        <EditText
+            android:id="@+id/et_note2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@id/et_note1"
+            android:hint="Nota 2"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.," />
+
+        <EditText
+            android:id="@+id/et_note3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@id/et_note2"
+            android:hint="Nota 3"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.," />
+
+        <EditText
+            android:id="@+id/et_note4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@id/et_note3"
+            android:hint="Nota 4"
+            android:inputType="numberDecimal"
+            android:digits="0123456789.," />
+
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_note4"
+            android:layout_marginTop="24dp"
+            android:text="Calcular"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </RelativeLayout>
+</FrameLayout>

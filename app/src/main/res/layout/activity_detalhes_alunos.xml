@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailMembers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.grupo.AlunosDetalheActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+        app:title="Informações"
+        app:titleTextColor="@android:color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_info"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_ra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_detail"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:text="0000000-0"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
